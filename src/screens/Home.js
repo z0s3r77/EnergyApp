@@ -1,4 +1,4 @@
-import {SafeAreaView, ScrollView, StyleSheet, Text, View} from "react-native";
+import {SafeAreaView, ScrollView, StyleSheet, Text} from "react-native";
 import {StatusBar} from "expo-status-bar";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";

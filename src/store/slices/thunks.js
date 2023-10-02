@@ -1,5 +1,4 @@
 import {
-    setAllPrices,
     setAvgPrice,
     setMaxPrice,
     setMinPrice,
