@@ -8,6 +8,9 @@ export const PrecioLuzSlice = createSlice({
         avgPrice: null,
         maxPrice: null,
         minPrice: null,
+        minPrices: null,
+        firstMinPrice: null,
+        lastMinPrice: null,
         isLoading: false,
     },
     reducers: {
@@ -33,10 +36,16 @@ export const PrecioLuzSlice = createSlice({
             state.avgPrice = action.payload.avgPrice;
         },
 
+        setMinPrices: (state, action) => {
+          state.minPrices = action.payload.minPrices;
+          state.firstMinPrice = action.payload.firstMinPrice;
+          state.lastMinPrice = action.payload.lastMinPrice;
+        },
+
         stopLoadingPrices: (state) => {
             state.isLoading = false;
         }
     }
 });
 
-export const { startLoadingAllPrices, setAllPrices, setMaxPrice, stopLoadingPrices, setMinPrice, setAvgPrice } = PrecioLuzSlice.actions;
+export const { startLoadingAllPrices, setAllPrices, setMaxPrice, stopLoadingPrices, setMinPrice, setAvgPrice, setMinPrices } = PrecioLuzSlice.actions;

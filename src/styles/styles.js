@@ -1,6 +1,17 @@
 import {StyleSheet} from "react-native";
 
 export const styles = StyleSheet.create({
+    container4: {
+
+        backgroundColor: "blue"
+
+
+    },
+    container5: {
+        backgroundColor: "red",
+        marginHorizontal: 15,
+
+    },
     container2: {
         borderRadius: 10,
         paddingTop: 10,
